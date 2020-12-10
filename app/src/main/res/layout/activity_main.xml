@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash_color"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/radius_login"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+
+        <ScrollView
+            android:layout_marginBottom="80dp"
+            android:id="@+id/sv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="JIKA BELUM PUNYA AKUN, SILAHKAN MENDAFTAR"
+                    android:textAlignment="center"
+                    android:textColor="#CC0083"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="256dp" />
+
+                <TextView
+                    android:textColor="#FA75CB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Nomor Induk Kependudukan"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    android:backgroundTint="#CC0083"
+                    android:id="@+id/nik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nomor Induk Kependudukan"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:textColor="#FA75CB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Nama lengkap"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:backgroundTint="#CC0083"
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter nama lengkap"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:textColor="#FA75CB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Username"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:backgroundTint="#CC0083"
+                    android:id="@+id/editTextUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter username"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:textColor="#FA75CB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Password"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:maxLines="1"
+                    android:backgroundTint="#CC0083"
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter password"
+                    android:inputType="textPassword"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:textColor="#FA75CB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Email"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:backgroundTint="#CC0083"
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter email"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:textColor="#FA75CB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tlp number"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:backgroundTint="#CC0083"
+                    android:id="@+id/telpNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="Enter tlp number"
+                    tools:ignore="MissingConstraints" />
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/buttonRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/radius_button"
+                android:text="Register User"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:textColor="#00A096"
+                android:id="@+id/textViewLogin"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="klik login"
+                android:textAlignment="center"
+                android:textSize="15dp"  />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/radius_login"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/ok" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="monospace"
+            android:text="Registrasi"
+            android:textColor="#CC0083"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
